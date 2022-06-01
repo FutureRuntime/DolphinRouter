@@ -16,6 +16,13 @@
 npm i dolphin-router --save
 ```
 
+## 开发者
+
+以团队方式进行发布
+```sh
+npm publish --access public
+```
+
 ## 基于koa的web开发示例
 
 ### 新建koa项目
