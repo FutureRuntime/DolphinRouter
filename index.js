@@ -22,6 +22,7 @@ class DolphinRouter {
             wrapperRouter(router)
             return router
         }
+        console.log(this._config.getCtlConf());
         const result = ApiDoc.createDoc({
             src: this._config.getCtlConf(),
             includeFilters: ['.js'],
@@ -38,7 +39,7 @@ class DolphinRouter {
             ret[api.type][api.url] = {
                 type: api.type,
                 url: api.url,
-                filename: api.filename,
+                filename: Path.join(this._config.getCtlConf(), api.filename),
                 method: api.title
             }
 
@@ -84,6 +85,7 @@ class DolphinRouter {
         const router = new Router()
 
         let methods = Object.keys(ret)
+        console.log(methods)
         for (let i = 0; i < methods.length; i++) {
             let method = methods[i]
             let pathMap = ret[method]
