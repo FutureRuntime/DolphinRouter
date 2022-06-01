@@ -1,0 +1,30 @@
+{
+  "name": "dolphin-router",
+  "version": "0.1.2",
+  "description": "轻量级的路由框架",
+  "keywords": [
+    "router",
+    "koa-router",
+    "note"
+  ],
+  "main": "index.js",
+  "author": "Jinwei Peng <jinwei.peng@outlook.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/FutureRuntime/DolphinRouter.git"
+  },
+  "dependencies": {
+    "apidoc": "^0.25.0",
+    "koa-body": "^4.2.0",
+    "koa-router": "^9.4.0"
+  },
+  "dolphin": {
+    "controller": {
+      "path": "./src/controllers"
+    },
+    "extends": {
+      "path": "./src/apiextends"
+    }
+  }
+}

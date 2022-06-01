@@ -1,0 +1,16 @@
+{
+    "name": "newfeature",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "start": "node index.js"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+      "dolphin-router": "^0.0.5",
+      "koa": "^2.13.0"
+    }
+  }
+  
